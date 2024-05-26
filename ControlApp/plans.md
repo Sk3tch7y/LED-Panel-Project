@@ -1,0 +1,1 @@
+The control app, I am thinking would just be hosted as a webpage by the SeeedS3 or connect over bluetooth as an app. I could use REACT so that it is deployable on both, as the microcontroller can just act as the API for the app.

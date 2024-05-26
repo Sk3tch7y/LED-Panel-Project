@@ -1,0 +1,3 @@
+In making a engine capable of displaying in two dimensions I only need to create a translations engine for rasterizing the pixels into the Display led list. currently the ledMatrix object is my current way to program for each panel. this can help with making the product work with more panels as they are added. the original led list is one dimensional so I just have to break processing up into 8x8 matrixes and I can change which panel I am writing to by adding the 63 led offset(Each has 64 but we start at 0)
+
+Having a webapp that on submit, sends a grid of pixels in whatever orientation they choose. I can use a picture of a panel recursively to allow the user to customize the orientation. 
