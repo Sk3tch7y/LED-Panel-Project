@@ -34,15 +34,24 @@ void setup() {
   Serial.println("Hello, World!");
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
   
-  FastLED.setBrightness(100);
+  FastLED.setBrightness(5);
   //makeHeart();
 
 }
+
 void loop() {
   //rotateDisplay(180, ledMatrix);
-  //linearGrad(CRGB(0xFF6800), CRGB(0x990044), ledMatrix);
-  convertToImage();
+  linearGrad(CRGB(0xFF5500), CRGB(0xFF00FF), ledMatrix);
+  
+  rasterize(leds, ledMatrix);
   FastLED.show();
+  delay(1000);
+
+  linearGrad(CRGB(0x00FF00), CRGB(0x0000FF), ledMatrix);
+
+  rasterize(leds, ledMatrix);
+  FastLED.show();
+  delay(1000);
   //Serial.println("Done Loop");
 }
 
