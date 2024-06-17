@@ -40,15 +40,8 @@ void setup() {
 }
 
 void loop() {
-  //rotateDisplay(180, ledMatrix);
-  linearGrad(CRGB(0xFF5500), CRGB(0xFF00FF), ledMatrix);
-  
-  rasterize(leds, ledMatrix);
-  FastLED.show();
-  delay(1000);
-
   linearGrad(CRGB(0x00FF00), CRGB(0x0000FF), ledMatrix);
-
+  //rotateAtCenter(90, ledMatrix);
   rasterize(leds, ledMatrix);
   FastLED.show();
   delay(1000);
