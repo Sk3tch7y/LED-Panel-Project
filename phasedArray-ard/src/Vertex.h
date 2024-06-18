@@ -1,24 +1,24 @@
 #include <FastLED.h>
 #include <Arduino.h>
 
-#ifndef PIXEL_H
-#define PIXEL_H
+#ifndef VERTEX_H
+#define VERTEX_H
 
 
-class Pixel{
+class Vertex{
   public:
     int x;
     int y;
     int z;
     CRGB color;
 
-    Pixel(int x, int y, CRGB color){
+    Vertex(int x, int y, CRGB color){
         this->x = x;
         this->y = y;
         this->color = color;
         
     }
-    Pixel(int x, int y, int z, CRGB color){
+    Vertex(int x, int y, int z, CRGB color){
         this->x = x;
         this->y = y;
         this->z = z;
