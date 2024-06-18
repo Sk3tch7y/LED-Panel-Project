@@ -15,6 +15,7 @@ class Vertex{
     Vertex(int x, int y, CRGB color){
         this->x = x;
         this->y = y;
+        this->z = 0;
         this->color = color;
         
     }

@@ -1,8 +1,8 @@
 #include <FastLED.h>
 #include <Arduino.h>
 
-#ifndef IMAGEFUNCTIONS_H
-#define IMAGEFUNCTIONS_H
+#ifndef FRAGMENT_FUNCTIONS_H
+#define FRAGMENT_FUNCTIONS_H
 void setCenter(CRGB color, CRGB leds[8][8]){
   leds[3][3] = color;
   leds[3][4] = color;

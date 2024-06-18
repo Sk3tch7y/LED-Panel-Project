@@ -1,9 +1,9 @@
 #include <Arduino.h>
 #include <FastLED.h>
 #include <math.h>
-#include <imageFunctions.h>
+#include <fragmentFunctions.h>
 #include <matrixFunctions.h>
-#include <Pixel.h>
+#include <Vertex.h>
 
 #define NUM_LEDS 64
 #define DATA_PIN 1
